@@ -53,19 +53,19 @@ def make_fig1() -> None:
     ax1.set_title("(a) Linear Gate Scaling vs. Bounded-Weight Barrier")
     ax1.legend(loc="upper left", frameon=True, framealpha=0.92, fontsize=7.6)
 
-    # Panel (b): Complex FFT coefficient bit-width blow-up vs fixed-modulus Post-Quantum NTT
+    # Panel (b): Complex FFT coefficient bit-width blow-up vs fixed-modulus product-group NTT
     ax2.semilogx(ks, b_min, "s-", color="#c62828", lw=2.2, ms=5.0,
-                 label=r"Complex FFT min coeff bits $b_{\min} = \frac{1}{2}\sqrt{\log_2 N}$")
-    ax2.axhline(12, color="#2e7d32", ls="--", lw=1.8, label=r"ML-KEM / Kyber NTT ($q = 3329$, fixed $12$ bits)")
-    ax2.axhline(23, color="#6a1b9a", ls="-.", lw=1.8, label=r"ML-DSA / Dilithium NTT ($q = 8380417$, fixed $23$ bits)")
+                 label=r"Complex FFT min dynamic-range bits $b_{\min} = \frac{1}{2}\sqrt{\log_2 N}$")
+    ax2.axhline(12, color="#2e7d32", ls="--", lw=1.8, label=r"Product-group NTT ($\exp(G)\mid q{-}1$): Kyber $q=3329$ ($12$ bits)")
+    ax2.axhline(23, color="#6a1b9a", ls="-.", lw=1.8, label=r"Product-group NTT ($\exp(G)\mid q{-}1$): Dilithium $q=8380417$ ($23$ bits)")
     ax2.scatter([576], [12.0], color="#2e7d32", s=55, zorder=5, edgecolor="black", lw=0.7)
-    ax2.annotate(r"Kyber crossover ($k=576$)", xy=(576, 12.0), xytext=(22, 14.5), fontsize=8.0,
+    ax2.annotate(r"Product-group crossover" + "\n" + r"$k=576,\; G=(\mathbb{Z}/256\mathbb{Z})^{72}$", xy=(576, 12.0), xytext=(14, 14.3), fontsize=7.6,
                  arrowprops=dict(arrowstyle="->", lw=0.8, color="#1b5e20"))
     ax2.set_xlabel(r"Transform scale $k = \log_2 N$")
-    ax2.set_ylabel(r"Required scalar coefficient bit-width $b = \log_2 C$")
-    ax2.set_ylim(0, 26.5)
-    ax2.set_title("(b) Complex-FFT Blow-Up vs. Fixed-Modulus NTT Dichotomy")
-    ax2.legend(loc="upper left", frameon=True, framealpha=0.92, fontsize=7.6)
+    ax2.set_ylabel(r"Scalar dynamic-range / modulus bit-width")
+    ax2.set_ylim(0, 27.5)
+    ax2.set_title("(b) Complex-FFT Blow-Up vs. Bounded-Exponent NTT")
+    ax2.legend(loc="upper left", frameon=True, framealpha=0.92, fontsize=7.0)
 
     FIGDIR.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIGDIR / "fig1_morgenstern_conservation.png", bbox_inches="tight")

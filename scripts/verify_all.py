@@ -56,7 +56,7 @@ def check_lean() -> None:
         raise RuntimeError(f"lake build failed:\n{p1.stdout}\n{p1.stderr}")
     if "warning:" in (p1.stdout + p1.stderr).lower():
         raise RuntimeError(f"Lean warnings detected:\n{p1.stdout}\n{p1.stderr}")
-    p2 = subprocess.run(["lake", "env", "lean", "AuditAxioms.lean"], cwd=lean_dir, capture_output=True, text=True)
+    p2 = subprocess.run(["lake", "env", "lean", "-j", "1", "AuditAxioms.lean"], cwd=lean_dir, capture_output=True, text=True)
     if p2.returncode != 0:
         raise RuntimeError(f"AuditAxioms failed:\n{p2.stdout}\n{p2.stderr}")
     out = p2.stdout + p2.stderr
