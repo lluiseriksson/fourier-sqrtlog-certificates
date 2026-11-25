@@ -1,0 +1,11 @@
+{
+  "schema": "FOURIER-GATE-CERT-1.0",
+  "mode": "pythagorean_rect_separation",
+  "label": "u9_v1_k64",
+  "u": 9,
+  "v": 1,
+  "k": 64,
+  "L": "9/40",
+  "delta_rect": "1/40",
+  "total_price_gap": "8/5"
+}

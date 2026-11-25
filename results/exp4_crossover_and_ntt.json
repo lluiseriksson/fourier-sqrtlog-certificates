@@ -1,0 +1,76 @@
+{
+  "crossovers": [
+    {
+      "overhead_c0": 1,
+      "crossover_k_log2N": 1,
+      "crossover_N_power": "2^1",
+      "min_complex_bits_at_crossover": 0.5
+    },
+    {
+      "overhead_c0": 2,
+      "crossover_k_log2N": 4,
+      "crossover_N_power": "2^4",
+      "min_complex_bits_at_crossover": 1.0
+    },
+    {
+      "overhead_c0": 4,
+      "crossover_k_log2N": 16,
+      "crossover_N_power": "2^16",
+      "min_complex_bits_at_crossover": 2.0
+    },
+    {
+      "overhead_c0": 8,
+      "crossover_k_log2N": 64,
+      "crossover_N_power": "2^64",
+      "min_complex_bits_at_crossover": 4.0
+    },
+    {
+      "overhead_c0": 16,
+      "crossover_k_log2N": 256,
+      "crossover_N_power": "2^256",
+      "min_complex_bits_at_crossover": 8.0
+    }
+  ],
+  "ntt_benchmarks": [
+    {
+      "name": "F_17 (N=4)",
+      "q": 17,
+      "bits": 5,
+      "N": 4,
+      "gates": 8,
+      "gates_per_sample": 2.0
+    },
+    {
+      "name": "F_17 (N=8)",
+      "q": 17,
+      "bits": 5,
+      "N": 8,
+      "gates": 24,
+      "gates_per_sample": 3.0
+    },
+    {
+      "name": "F_257 (N=16)",
+      "q": 257,
+      "bits": 9,
+      "N": 16,
+      "gates": 64,
+      "gates_per_sample": 4.0
+    },
+    {
+      "name": "ML-KEM/Kyber (q=3329, N=8)",
+      "q": 3329,
+      "bits": 12,
+      "N": 8,
+      "gates": 24,
+      "gates_per_sample": 3.0
+    },
+    {
+      "name": "ML-KEM/Kyber (q=3329, N=16)",
+      "q": 3329,
+      "bits": 12,
+      "N": 16,
+      "gates": 64,
+      "gates_per_sample": 4.0
+    }
+  ]
+}

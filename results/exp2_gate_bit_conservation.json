@@ -1,0 +1,124 @@
+{
+  "conservation_curves": [
+    {
+      "k_log2N": 4,
+      "sqrt_k": 2.0,
+      "cooley_tukey_gates_per_sample": 4,
+      "openai_c1_gates_per_sample": 2.0,
+      "openai_c1_min_complex_bits": 1.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 9,
+      "sqrt_k": 3.0,
+      "cooley_tukey_gates_per_sample": 9,
+      "openai_c1_gates_per_sample": 3.0,
+      "openai_c1_min_complex_bits": 1.5,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 16,
+      "sqrt_k": 4.0,
+      "cooley_tukey_gates_per_sample": 16,
+      "openai_c1_gates_per_sample": 4.0,
+      "openai_c1_min_complex_bits": 2.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 25,
+      "sqrt_k": 5.0,
+      "cooley_tukey_gates_per_sample": 25,
+      "openai_c1_gates_per_sample": 5.0,
+      "openai_c1_min_complex_bits": 2.5,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 36,
+      "sqrt_k": 6.0,
+      "cooley_tukey_gates_per_sample": 36,
+      "openai_c1_gates_per_sample": 6.0,
+      "openai_c1_min_complex_bits": 3.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 49,
+      "sqrt_k": 7.0,
+      "cooley_tukey_gates_per_sample": 49,
+      "openai_c1_gates_per_sample": 7.0,
+      "openai_c1_min_complex_bits": 3.5,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 64,
+      "sqrt_k": 8.0,
+      "cooley_tukey_gates_per_sample": 64,
+      "openai_c1_gates_per_sample": 8.0,
+      "openai_c1_min_complex_bits": 4.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 100,
+      "sqrt_k": 10.0,
+      "cooley_tukey_gates_per_sample": 100,
+      "openai_c1_gates_per_sample": 10.0,
+      "openai_c1_min_complex_bits": 5.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 144,
+      "sqrt_k": 12.0,
+      "cooley_tukey_gates_per_sample": 144,
+      "openai_c1_gates_per_sample": 12.0,
+      "openai_c1_min_complex_bits": 6.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 256,
+      "sqrt_k": 16.0,
+      "cooley_tukey_gates_per_sample": 256,
+      "openai_c1_gates_per_sample": 16.0,
+      "openai_c1_min_complex_bits": 8.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 400,
+      "sqrt_k": 20.0,
+      "cooley_tukey_gates_per_sample": 400,
+      "openai_c1_gates_per_sample": 20.0,
+      "openai_c1_min_complex_bits": 10.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    },
+    {
+      "k_log2N": 1024,
+      "sqrt_k": 32.0,
+      "cooley_tukey_gates_per_sample": 1024,
+      "openai_c1_gates_per_sample": 32.0,
+      "openai_c1_min_complex_bits": 16.0,
+      "kyber_fixed_ntt_bits": 12,
+      "dilithium_fixed_ntt_bits": 23,
+      "ieee_fp64_mantissa_bits": 53
+    }
+  ]
+}

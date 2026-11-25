@@ -1,0 +1,11 @@
+[project]
+name = "fourier-sqrtlog-certificates"
+version = "1.0.0"
+description = "Morgenstern gate-bit conservation, complex-FFT vs finite-field NTT precision dichotomy, Pythagorean rectangular price separation, and exact straight-line circuit DAG certificates."
+authors = [{ name = "Lluis Eriksson" }]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+experiments = ["numpy>=1.26", "matplotlib>=3.8", "pytest>=8.0"]

@@ -1,0 +1,12 @@
+{
+  "schema": "FOURIER-GATE-CERT-1.0",
+  "mode": "morgenstern_conservation",
+  "label": "batch_J8_k64",
+  "J": 8,
+  "k": 64,
+  "N": 18446744073709551616,
+  "L": "1180591620717411303424",
+  "b": "3",
+  "min_bitwidth_required": "4",
+  "claimed_status": "morgenstern_impossible"
+}

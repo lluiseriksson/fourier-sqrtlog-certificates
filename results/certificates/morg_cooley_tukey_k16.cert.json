@@ -1,0 +1,12 @@
+{
+  "schema": "FOURIER-GATE-CERT-1.0",
+  "mode": "morgenstern_conservation",
+  "label": "ct_k16",
+  "J": 1,
+  "k": 16,
+  "N": 65536,
+  "L": "1048576",
+  "b": "1",
+  "min_bitwidth_required": "1/2",
+  "claimed_status": "feasible"
+}
